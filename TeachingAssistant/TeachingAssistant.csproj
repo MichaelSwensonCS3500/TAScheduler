@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BFED7603-853F-40D5-9E7E-C9D4A9E37532}</ProjectGuid>
+    <ProjectGuid>{07CD54A9-E92F-4926-BCEC-EDDDBA62C40C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>TAScheduler</RootNamespace>
-    <AssemblyName>TAScheduler</AssemblyName>
+    <RootNamespace>TeachingAssistant</RootNamespace>
+    <AssemblyName>TeachingAssistant</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -53,9 +53,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -77,12 +74,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Teaching_Assistant\Teaching_Assistant.csproj">
-      <Project>{4E12FF3C-A948-4744-AD20-0F8329EDD751}</Project>
-      <Name>Teaching_Assistant</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
